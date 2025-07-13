@@ -19,11 +19,22 @@
         </div>
         <div class="mb-3">
             <label>Course:</label>
-            <input type="text" name="course" class="form-control" required>
+           <select name="course" class="form-control" required title="Please select a course">
+
+    <option value="">-- Select Course --</option>
+    <option value="CCOM">Certificate in Office Management (CCOM)</option>
+    <option value="TALLY">Tally with GST</option>
+    <option value="DFA">Diploma in Financial Accounting (DFA)</option>
+    <option value="EXCEL">Advanced Excel</option>
+    <option value="PYTHON">Python Programming</option>
+    <option value="ENGLISH">Spoken English</option>
+</select>
         </div>
         <div class="mb-3">
             <label>Mobile:</label>
-            <input type="text" name="mobile" class="form-control" required>
+            <input type="text" name="mobile" class="form-control" required
+       pattern="[0-9]{10}" title="Enter a valid 10-digit mobile number"placeholder="Enter 10-digit mobile number">
+
         </div>
         <div class="mb-3">
             <label>Date of Admission:</label>
